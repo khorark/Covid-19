@@ -4,10 +4,11 @@ import 'package:corona_virus_server/src/fetch.dart';
 var url = 'https://coronavirus-monitor.ru/api/v1/statistics/get-cities';
 
 const API_KEY = '754c321741324f788e9d7ae4beb16ebd';
+const PAGE_SIZE = 50;
 const langs = {'ru': 'коронавирус', 'en': 'coronavirus'};
 
 String insertParamsToUrl(String q) =>
-    'https://newsapi.org/v2/everything?q=${q}&sortBy=publishedAt&pageSize=100&apiKey=${API_KEY}';
+    'https://newsapi.org/v2/everything?q=${q}&sortBy=publishedAt&pageSize=$PAGE_SIZE&apiKey=$API_KEY';
 
 Future<Map<String, dynamic>> getNews(String lang) async {
   var url = insertParamsToUrl(langs[lang]);

@@ -10,4 +10,4 @@ services:
       - dart
   dart:
     build: ./dart
-    container_name: server
+    container_name: dart-server

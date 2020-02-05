@@ -8,7 +8,7 @@ import 'package:shelf/shelf.dart' as shelf;
 import 'package:shelf/shelf_io.dart' as io;
 import 'package:corona_virus_server/router.dart' as router;
 
-const _hostname = '127.0.0.1';
+const _hostname = '0.0.0.0';
 const _port = 3000;
 
 void main(List<String> args) async {

@@ -9,5 +9,5 @@ services:
     depends_on:
       - dart
   dart:
-    build: ./dart
+    build: ./server
     container_name: dart-server

@@ -18,7 +18,7 @@ If you need changed host or port, please edit docket-compose file.
 
 ## Auth secret key
 
-:exclamation: **IMPORTANT** :exclamation: Please chang your secret key for access you server.
+:exclamation: **IMPORTANT** :exclamation: Please changed your secret key for access server.
 
 This key used when frontend send request in Authorization Header.
 

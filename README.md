@@ -85,6 +85,9 @@ Example out:
         "__v": 0
       },
       ...
+    ]
+  }
+}
 ```
 
 ## Licence MIT

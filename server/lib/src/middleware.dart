@@ -1,14 +1,13 @@
 import 'dart:convert';
 
 import 'package:shelf/shelf.dart' as shelf;
-
-const _auth_token = 'Y29yb25hdmlydXNfemF4dmF0aXZhZXRfdmVzX21pcg';
+import 'package:corona_virus_server/const/auth_token.dart' as auth;
 
 shelf.Response _contentType(shelf.Response response) =>
     response.change(headers: {'content-type': 'application/json'});
 shelf.Response _checkAuth(shelf.Request request) {
   if (!request.headers.containsKey('authorization') ||
-      request.headers['authorization'] != 'Basic $_auth_token') {
+      request.headers['authorization'] != 'Basic ${auth.auth_token}') {
     var res = {
       'status': 403,
       'error': 'Credentials error!',
